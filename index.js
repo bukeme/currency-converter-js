@@ -14,7 +14,14 @@ async function getSymbols() {
     return symbols
 }
 
-getSymbols().then((data) => console.log(Object.entries(data)[0]))
+getSymbols().then((data) => {
+    const listSymbols = Object.values(data)
+    const symbols = []
+    listSymbols.forEach(function(symbol) {
+        symbols.push(Object.values(symbol).join(', '))
+    })
+    console.log(symbols)
+})
 
 
 
