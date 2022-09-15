@@ -14,24 +14,19 @@
     <form>
         <div class="input-group">
             <label>From Currency</label>
-            <input type="text" class="from-currency">
             <div class="options">
-                <p>USD, <span>United State Dollar</span></p>
-                <p>USD, <span>United State Dollar</span></p>
-                <p>USD, <span>United State Dollar</span></p>
-                <p>USD, <span>United State Dollar</span></p>
-                <p>USD, <span>United State Dollar</span></p>
-                <p>USD, <span>United State Dollar</span></p>
-                <p>USD, <span>United State Dollar</span></p>
+                <select name="" id="" class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+                </select>
             </div>
-            <p class="error">Field cannot be empty</p>
-            <p class="error">Enter a valid currency</p>
         </div>
         <div class="input-group">
             <label>To Currency</label>
-            <input type="text" class="to-currency">
             <div class="options">
-                <p>USD, <span>United State Dollar</span></p>
+                <select onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+                    <option value="usd">usd</option>
+                    <option value="usd">usd</option>
+                    <option value="usd">usd</option>
+                </select>
             </div>
             <p class="error">Field cannot be empty</p>
             <p class="error">Enter a valid currency</p>
