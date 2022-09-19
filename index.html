@@ -14,22 +14,11 @@
     <form>
         <div class="input-group">
             <label>From Currency</label>
-            <div class="options">
-                <select name="" id="" class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
-                </select>
-            </div>
+            <select class="from-currency" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'></select>
         </div>
         <div class="input-group">
             <label>To Currency</label>
-            <div class="options">
-                <select onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
-                    <option value="usd">usd</option>
-                    <option value="usd">usd</option>
-                    <option value="usd">usd</option>
-                </select>
-            </div>
-            <p class="error">Field cannot be empty</p>
-            <p class="error">Enter a valid currency</p>
+            <select class="to-currency" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'></select>
         </div>
         <div class="input-group">
             <label>Enter A Number</label>
@@ -39,10 +28,12 @@
         </div>
         <div class="input-group">
             <label>Enter Date For Conversion</label>
-            <input type="text" placeholder="mm-dd-yyyy" class="date">
+            <input type="text" placeholder="yyyy-mm-dd" class="date">
             <p class="error">Enter a valid date</p>
         </div>
+        <input type="submit" value="submit">
     </form>
+    <p class="result"></p>
 
     <script src="index.js"></script>
 </body>
