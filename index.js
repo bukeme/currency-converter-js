@@ -73,7 +73,6 @@ form.addEventListener('submit', function(e) {
         const toCurrencyValue = toCurrency.value || toCurrency.children[0].attributes.value.value
         const amountValue = amount.value
         const dateValue = dateInput.value || `${dateObj.getFullYear()}-${formatDate(dateObj.getMonth() + 1)}-${formatDate(dateObj.getDate())}`
-        console.log(dateValue)
         async function fetchRate() {
             const response = await fetch('https://api.exchangerate.host/' + dateValue)
             const data = response.json()
